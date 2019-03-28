@@ -2,78 +2,78 @@ export default {
   Vultr: [
     {
       name: "Frankfurt",
-      url: "http://fra-de-ping.vultr.com/",
-      download: "http://fra-de-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://fra-de-ping.vultr.com/",
+      download: "https://fra-de-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Amsterdam",
-      url: "http://ams-nl-ping.vultr.com/",
-      download: "http://ams-nl-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://ams-nl-ping.vultr.com/",
+      download: "https://ams-nl-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Paris",
-      url: "http://par-fr-ping.vultr.com/",
-      download: "http://par-fr-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://par-fr-ping.vultr.com/",
+      download: "https://par-fr-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "London",
-      url: "http://lon-gb-ping.vultr.com/",
-      download: "http://lon-gb-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://lon-gb-ping.vultr.com/",
+      download: "https://lon-gb-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Singapore",
-      url: "http://sgp-ping.vultr.com/",
-      download: "http://sgp-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://sgp-ping.vultr.com/",
+      download: "https://sgp-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Tokyo",
-      url: "http://hnd-jp-ping.vultr.com/",
-      download: "http://hnd-jp-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://hnd-jp-ping.vultr.com/",
+      download: "https://hnd-jp-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "New Jersey",
-      url: "http://nj-us-ping.vultr.com/",
-      download: "http://nj-us-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://nj-us-ping.vultr.com/",
+      download: "https://nj-us-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Chicago",
-      url: "http://il-us-ping.vultr.com/",
-      download: "http://il-us-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://il-us-ping.vultr.com/",
+      download: "https://il-us-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Seattle",
-      url: "http://wa-us-ping.vultr.com/",
-      download: "http://wa-us-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://wa-us-ping.vultr.com/",
+      download: "https://wa-us-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Atlanta",
-      url: "http://ga-us-ping.vultr.com/",
-      download: "http://ga-us-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://ga-us-ping.vultr.com/",
+      download: "https://ga-us-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Miami",
-      url: "http://fl-us-ping.vultr.com/",
-      download: "http://fl-us-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://fl-us-ping.vultr.com/",
+      download: "https://fl-us-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Dallas",
-      url: "http://tx-us-ping.vultr.com/",
-      download: "http://tx-us-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://tx-us-ping.vultr.com/",
+      download: "https://tx-us-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Silicon Valley",
-      url: "http://sjo-ca-us-ping.vultr.com/",
-      download: "http://sjo-ca-us-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://sjo-ca-us-ping.vultr.com/",
+      download: "https://sjo-ca-us-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Los Angeles",
-      url: "http://lax-ca-us-ping.vultr.com/",
-      download: "http://lax-ca-us-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://lax-ca-us-ping.vultr.com/",
+      download: "https://lax-ca-us-ping.vultr.com/vultr.com.100MB.bin"
     },
     {
       name: "Sydney",
-      url: "http://syd-au-ping.vultr.com/",
-      download: "http://syd-au-ping.vultr.com/vultr.com.100MB.bin"
+      url: "https://syd-au-ping.vultr.com/",
+      download: "https://syd-au-ping.vultr.com/vultr.com.100MB.bin"
     }
   ],
   Linode: [

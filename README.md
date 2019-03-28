@@ -1,3 +1,7 @@
+# Cecesu
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/02b0bf07-0860-43b5-8068-168fcdb24f39/deploy-status)](https://app.netlify.com/sites/cecesu/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
