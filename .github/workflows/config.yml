@@ -18,8 +18,7 @@ jobs:
       - uses: khan/pull-request-comment-trigger@master
         id: check
         with:
-          trigger: '@test'
-          reaction: rocket
+          trigger: '/test'
         env:
           GITHUB_TOKEN: '${{ secrets.API_TOKEN }}'
 
