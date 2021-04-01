@@ -1,6 +1,10 @@
 name: main
 
-on: pull_request
+on:
+  pull_request:
+    types: [opened]
+  issue_comment:
+    types: [created]
 
 jobs:
   test:
@@ -11,7 +15,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: View the github context
-        run: echo "$GITHUB_CONTEXT"
+      - uses: khan/pull-request-comment-trigger@master
+        id: check
+        with:
+          trigger: '@test'
+          reaction: rocket
         env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
+          GITHUB_TOKEN: '${{ secrets.API_TOKEN }}'
+
+      - run: 'echo Found it!'
+        if: steps.check.outputs.triggered == 'true'
