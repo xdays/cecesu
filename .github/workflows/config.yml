@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    name: run unit test
+    name: run unit tests
     runs-on: ubuntu-latest
 
     steps:
@@ -18,9 +18,9 @@ jobs:
       - uses: khan/pull-request-comment-trigger@master
         id: check
         with:
-          trigger: '/test'
+          trigger: '/run-test'
         env:
           GITHUB_TOKEN: '${{ secrets.API_TOKEN }}'
 
-      - run: 'Found it!'
+      - run: 'echo Found it!'
         if: steps.check.outputs.triggered == 'true'
