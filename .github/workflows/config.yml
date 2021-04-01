@@ -23,5 +23,5 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.API_TOKEN }}'
 
-      - run: 'echo Found it!'
+      - run: 'Found it!'
         if: steps.check.outputs.triggered == 'true'
