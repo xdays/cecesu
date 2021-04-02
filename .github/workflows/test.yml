@@ -1,0 +1,30 @@
+name: Sandbox Test Pipeline
+
+on:
+  pull_request:
+    types: [opened]
+  issue_comment:
+    types: [created]
+
+jobs:
+  test:
+    name: run unit tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - uses: khan/pull-request-comment-trigger@master
+        id: check
+        with:
+          trigger: '/run-test'
+        env:
+          GITHUB_TOKEN: '${{ secrets.API_TOKEN }}'
+
+      - run: 'echo run unit test'
+        if: steps.check.outputs.triggered == 'true'
+
+      - name: 'fail the workflow when no unit test'
+        run: exit 1
+        if: steps.check.outputs.triggered != 'true'

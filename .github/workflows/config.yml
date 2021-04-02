@@ -1,29 +1,16 @@
-name: main
+name: Main Pipeline
 
 on:
-  pull_request:
-    types: [opened, closed]
-  issue_comment:
-    types: [created]
+  push
 
 jobs:
-  test:
-    name: run unit tests
+  deploy:
+    name: deploy
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - uses: khan/pull-request-comment-trigger@master
-        id: check
-        with:
-          trigger: '/run-test'
-        env:
-          GITHUB_TOKEN: '${{ secrets.API_TOKEN }}'
-
-      - run: 'echo I am triggered by pull request comment event'
-        if: steps.check.outputs.triggered == 'true'
-
-      - run: 'echo I am triggered by pull request merge event'
-        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+      - name: Build Release
+        run: yarn &&  yarn run build
