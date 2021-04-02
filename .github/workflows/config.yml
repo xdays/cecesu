@@ -2,7 +2,7 @@ name: main
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, closed]
   issue_comment:
     types: [created]
 
@@ -24,3 +24,6 @@ jobs:
 
       - run: 'echo Found it!'
         if: steps.check.outputs.triggered == 'true'
+
+      - name: Delete env when pr is merged
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
