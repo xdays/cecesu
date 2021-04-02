@@ -22,8 +22,8 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.API_TOKEN }}'
 
-      - run: 'echo Found it!'
+      - run: 'echo I am triggered by pull request comment event'
         if: steps.check.outputs.triggered == 'true'
 
-      - name: Delete env when pr is merged
+      - run: 'echo I am triggered by pull request merge event'
         if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
