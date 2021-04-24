@@ -3,8 +3,6 @@ name: Sandbox Cleanup Pipeline
 on:
   pull_request:
     types: [closed]
-  issue_comment:
-    types: [created]
 
 jobs:
   cleanup:
