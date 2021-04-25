@@ -5,7 +5,7 @@ on:
     types: [opened]
   issue_comment:
     types: [created]
-  push
+  push:
 
 jobs:
   test:
