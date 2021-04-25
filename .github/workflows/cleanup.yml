@@ -1,4 +1,4 @@
-name: Sandbox Cleanup Pipeline
+name: cleanup
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   cleanup:
-    name: cleanup sandbox environment
+    name: cleanup
     runs-on: ubuntu-latest
 
     steps:
