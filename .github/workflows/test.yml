@@ -1,4 +1,4 @@
-name: Sandbox Test Pipeline
+name: test
 
 on:
   issue_comment:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    name: run unit tests
+    name: test
     runs-on: ubuntu-latest
 
     steps:
