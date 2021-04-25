@@ -5,7 +5,6 @@ on:
     types: [created]
   push:
     branches:
-      - 'test'
       - 'sandbox-*'
 
 jobs:
