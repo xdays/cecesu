@@ -1,8 +1,6 @@
 name: Sandbox Test Pipeline
 
 on:
-  pull_request:
-    types: [opened]
   issue_comment:
     types: [created]
 
